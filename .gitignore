@@ -32,3 +32,5 @@ installer/*.p12
 *.msix.b64
 dist/Release/
 dist/AppxLayout/
+
+.github/
