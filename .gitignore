@@ -26,3 +26,9 @@ installer/*.pfx
 installer/*.p12
 *.pfx
 *.p12
+
+# Large binary/installer files
+*.msix
+*.msix.b64
+dist/Release/
+dist/AppxLayout/
