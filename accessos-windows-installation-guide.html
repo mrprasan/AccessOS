@@ -1,0 +1,242 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AccessOS Installation Guide</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-size: 14px; line-height: 1.6; color: #1f2328; background: #ffffff; padding: 32px 16px 48px; }
+  .page { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: #57606a; font-size: 13px; margin-bottom: 28px; }
+  h2 { font-size: 15px; font-weight: 600; margin: 28px 0 10px; padding-bottom: 5px; border-bottom: 1px solid #e5e7eb; }
+  h3 { font-size: 13px; font-weight: 600; margin: 16px 0 6px; color: #1f2328; }
+  p { margin-bottom: 10px; }
+  ul, ol { padding-left: 20px; margin-bottom: 10px; }
+  li { margin-bottom: 5px; }
+  code { font-family: "Consolas", "Courier New", monospace; font-size: 12.5px; background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 3px; padding: 1px 5px; color: #1f2328; }
+  pre { background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px 16px; font-size: 12.5px; font-family: "Consolas", "Courier New", monospace; overflow-x: auto; margin-bottom: 12px; line-height: 1.5; }
+  .step { display: flex; gap: 14px; margin-bottom: 18px; }
+  .step-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #3b82d4; color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+  .step-body { flex: 1; }
+  .step-title { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
+  .badge-green { background: #d1fae5; color: #065f46; }
+  .badge-blue  { background: #dbeafe; color: #1e40af; }
+  .badge-orange { background: #fef3c7; color: #92400e; }
+  .badge-red   { background: #fee2e2; color: #991b1b; }
+  .notice { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 6px; padding: 10px 14px; font-size: 13px; margin-bottom: 14px; }
+  .warn  { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; font-size: 13px; margin-bottom: 14px; }
+  .path { font-family: "Consolas", "Courier New", monospace; font-size: 12.5px; background: #f7f8fa; border: 1px solid #e5e7eb; border-radius: 3px; padding: 2px 6px; word-break: break-all; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 14px; }
+  th { background: #f7f8fa; text-align: left; padding: 7px 10px; border: 1px solid #e5e7eb; font-weight: 600; }
+  td { padding: 6px 10px; border: 1px solid #e5e7eb; vertical-align: top; }
+  .method-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin-bottom: 14px; }
+  .method-title { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+  .divider { border: none; border-top: 1px solid #e5e7eb; margin: 24px 0; }
+  footer { margin-top: 36px; padding-top: 12px; border-top: 1px solid #e5e7eb; font-size: 11px; color: #57606a; text-align: center; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>AccessOS — Installation Guide</h1>
+  <p class="subtitle">Version 1.0 · Windows 10 (1809+) x64 · Debug build</p>
+
+  
+  <h2>What was built</h2>
+  <table>
+    <tr><th>File</th><th>Location</th><th>Size</th></tr>
+    <tr><td><code>AccessOS-Debug-x64.msix</code></td><td class="path">dist\AccessOS-Debug-x64.msix</td><td>27.8 MB</td></tr>
+    <tr><td><code>AccessOSCore_d.dll</code></td><td class="path">build\bin\Debug\AccessOSCore_d.dll</td><td>3.1 MB</td></tr>
+    <tr><td><code>AccessOSUnitTests.exe</code></td><td class="path">build\bin\Debug\</td><td>8.8 MB</td></tr>
+    <tr><td><code>AccessOSDev.pfx</code></td><td class="path">installer\AccessOSDev.pfx</td><td>Dev cert</td></tr>
+  </table>
+  <p><span class="badge badge-green">✓ 804/804 tests pass</span>  <span class="badge badge-green">✓ 38 DLL exports</span>  <span class="badge badge-green">✓ MSIX signed</span></p>
+
+  
+  <h2>Choose your installation method</h2>
+
+  <div class="method-card">
+    <div class="method-title">Method A — MSIX double-click install <span class="badge badge-blue">Recommended</span></div>
+    <p>Installs the signed MSIX package after trusting the self-signed dev certificate. No Developer Mode required.</p>
+    <p><strong>Estimated time:</strong> 3–5 minutes</p>
+  </div>
+
+  <div class="method-card">
+    <div class="method-title">Method B — Developer Mode + winapp run <span class="badge badge-orange">Dev workflow</span></div>
+    <p>Registers a debug layout without installing. Best for active development. Requires Developer Mode to be enabled in Windows Settings.</p>
+    <p><strong>Estimated time:</strong> 2 minutes (plus 1 reboot if Developer Mode was off)</p>
+  </div>
+
+  
+  <h2>Method A — MSIX install (no Developer Mode needed)</h2>
+
+  <div class="notice">The MSIX is signed with a self-signed certificate (<code>CN=AccessOS</code>). You must trust this certificate once before installing. The certificate is only for local testing — it is not a public CA.</div>
+
+  <h3>Step 1 — Trust the certificate (one-time)</h3>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <div class="step-title">Open an elevated PowerShell (Run as Administrator)</div>
+      <p>Press <strong>Win + X</strong> → <strong>Windows PowerShell (Admin)</strong> or <strong>Terminal (Admin)</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <div class="step-title">Import the certificate into Trusted Root</div>
+      <pre>Import-PfxCertificate `
+  -FilePath "C:\Users\PrasannaNariboina\OneDrive - IBM\Prasan_Devops\AccessOS\installer\AccessOSDev.pfx" `
+  -CertStoreLocation "Cert:\LocalMachine\Root" `
+  -Password (ConvertTo-SecureString "AccessOSDev123!" -AsPlainText -Force)</pre>
+      <p>You should see the certificate details printed. This trusts the cert system-wide for this machine only.</p>
+    </div>
+  </div>
+
+  <h3>Step 2 — Install the MSIX</h3>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <div class="step-title">Double-click the MSIX file</div>
+      <p>Navigate to: <span class="path">C:\Users\PrasannaNariboina\OneDrive - IBM\Prasan_Devops\AccessOS\dist\AccessOS-Debug-x64.msix</span></p>
+      <p>Double-click it. Windows shows the <strong>App Installer</strong> dialog.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <div class="step-title">Click Install</div>
+      <p>The installer shows <strong>AccessOS</strong> with version 0.1.0.0. Click <strong>Install</strong>.</p>
+      <p>If the Install button is greyed out, the certificate was not trusted — re-do Step 2.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+      <div class="step-title">Launch AccessOS</div>
+      <p>After installation: press <strong>Win</strong>, type <strong>AccessOS</strong>, press <strong>Enter</strong>.</p>
+      <p>Or install via PowerShell (no double-click needed):</p>
+      <pre>Add-AppxPackage "C:\Users\PrasannaNariboina\OneDrive - IBM\Prasan_Devops\AccessOS\dist\AccessOS-Debug-x64.msix"</pre>
+    </div>
+  </div>
+
+  
+  <h2>Method B — Developer Mode (winapp run)</h2>
+
+  <div class="warn">Developer Mode must be enabled. If you see <em>"Developer Mode is not enabled"</em>, follow Step 1 below.</div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <div class="step-title">Enable Developer Mode in Windows Settings</div>
+      <p>Press <strong>Win + I</strong> → <strong>Privacy &amp; security</strong> → <strong>For developers</strong> → toggle <strong>Developer Mode</strong> to <strong>On</strong>. Confirm the UAC prompt.</p>
+      <p><em>Alternatively</em>, run this in an elevated PowerShell:</p>
+      <pre>$p = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock"
+Set-ItemProperty $p AllowDevelopmentWithoutDevLicense 1 -Type DWord
+Set-ItemProperty $p AllowAllTrustedApps 1 -Type DWord</pre>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <div class="step-title">Run via winapp (from repository root)</div>
+      <pre>$winapp = "$env:USERPROFILE\.nuget\packages\microsoft.windows.sdk.buildtools.winapp\0.6.1\tools\win-x64\winapp.exe"
+&amp; $winapp run ".\src\UI\AccessOS.UI.csproj" -c Debug --arch x64</pre>
+      <p>This builds, registers a package identity, and launches the app in one step. The window opens automatically.</p>
+    </div>
+  </div>
+
+  
+  <h2>Uninstalling</h2>
+  <pre># Remove the MSIX package
+Get-AppxPackage -Name "AccessOS.ScreenReader" | Remove-AppxPackage
+
+# Remove the dev certificate (optional cleanup)
+Get-ChildItem Cert:\LocalMachine\Root | Where-Object Subject -eq "CN=AccessOS" | Remove-Item</pre>
+
+  
+  <h2>What to test after launch</h2>
+  <table>
+    <tr><th>Feature</th><th>How to test</th><th>Expected result</th></tr>
+    <tr>
+      <td>Start screen reader</td>
+      <td>Click <strong>Start</strong> in the control panel</td>
+      <td>Status dot turns green, "screen reader started" spoken</td>
+    </tr>
+    <tr>
+      <td>Focus reading</td>
+      <td>Press <strong>Tab</strong> in Notepad or any app</td>
+      <td>AccessOS announces element name, role, state</td>
+    </tr>
+    <tr>
+      <td>Speech rate</td>
+      <td>Move the Rate slider</td>
+      <td>Voice speed changes immediately</td>
+    </tr>
+    <tr>
+      <td>Browse mode</td>
+      <td>Open a browser, press <strong>CapsLock + Space</strong></td>
+      <td>"Browse mode on" announced; arrow keys navigate</td>
+    </tr>
+    <tr>
+      <td>Stop speech</td>
+      <td>Press <strong>CapsLock + Ctrl + S</strong></td>
+      <td>All speech stops immediately</td>
+    </tr>
+    <tr>
+      <td>System tray icon</td>
+      <td>Look at taskbar notification area</td>
+      <td>AccessOS icon visible; right-click shows menu</td>
+    </tr>
+    <tr>
+      <td>Auto-start toggle</td>
+      <td>Enable "Start AccessOS with Windows" in System panel</td>
+      <td>Entry appears in Task Manager → Startup apps</td>
+    </tr>
+    <tr>
+      <td>Unit tests</td>
+      <td><code>.\build\bin\Debug\AccessOSUnitTests.exe</code></td>
+      <td><strong>804/804 tests PASSED</strong></td>
+    </tr>
+  </table>
+
+  
+  <h2>Troubleshooting</h2>
+  <table>
+    <tr><th>Problem</th><th>Fix</th></tr>
+    <tr>
+      <td>"Install" button greyed out in App Installer</td>
+      <td>The certificate is not trusted. Re-run Step 1 in an <em>elevated</em> PowerShell (Run as Administrator).</td>
+    </tr>
+    <tr>
+      <td>No speech after clicking Start</td>
+      <td>Check <strong>Settings → Time &amp; Language → Speech</strong> — at least one SAPI voice must be installed. Try Microsoft David or Zira.</td>
+    </tr>
+    <tr>
+      <td><code>COMException 0x80040154</code> on launch</td>
+      <td>Package identity not registered. Use Method A (MSIX install) or Method B (winapp run).</td>
+    </tr>
+    <tr>
+      <td><code>AccessOSCore_d.dll not found</code></td>
+      <td>Run <code>cmake --build build --target AccessOSCoreDll --config Debug</code> first. The DLL post-build copies it automatically.</td>
+    </tr>
+    <tr>
+      <td>App Installer not available</td>
+      <td>Install it from the Microsoft Store, or use PowerShell: <code>Add-AppxPackage ".\dist\AccessOS-Debug-x64.msix"</code></td>
+    </tr>
+    <tr>
+      <td>winapp: "Developer Mode is not enabled"</td>
+      <td>Enable Developer Mode via <strong>Settings → Privacy &amp; security → For developers</strong>.</td>
+    </tr>
+  </table>
+
+  <hr class="divider" />
+  <footer>Made with IBM Bob</footer>
+</div>
+</body>
+</html>

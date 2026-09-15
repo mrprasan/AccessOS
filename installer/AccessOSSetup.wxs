@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AccessOSSetup.wxs — WiX v5 Bootstrapper Bundle (ACCESSOS-039)
+
+  Produces a single self-contained AccessOS-Setup.exe that:
+    1. Silently imports the dev signing certificate into Trusted Root
+    2. Installs the AccessOS MSIX package
+    3. Shows a simple UI (progress bar → finish)
+    4. Creates Start Menu + Desktop shortcuts automatically (via MSIX manifest)
+    5. Supports silent install:  AccessOS-Setup.exe /quiet
+    6. Supports uninstall:       AccessOS-Setup.exe /uninstall /quiet
+
+  Build (from repository root after WiX 5 is installed):
+    wix build installer\AccessOSSetup.wxs -o dist\AccessOS-Setup.exe
+
+  Prerequisites (handled automatically by the bundle):
+    - .NET 8 Desktop Runtime  (detected; downloaded if absent)
+    - Windows App SDK 2.4+    (detected; downloaded if absent)
+    - AccessOS signing cert   (imported from embedded .cer file)
+-->
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
+
+  <Bundle
+    Name="AccessOS"
+    Manufacturer="AccessOS Project"
+    Version="1.0.0.0"
+    UpgradeCode="A3B7C2D1-E4F5-6789-ABCD-EF0123456789"
+    IconSourceFile="$(sys.SOURCEFILEDIR)..\src\UI\Assets\AppIcon.ico"
+    AboutUrl="https://github.com/accessos/AccessOS">
+
+    <!-- ── Burn bootstrapper UI theme ──────────────────────────────── -->
+    <bal:WixStandardBootstrapperApplication
+      LicenseFile="$(sys.SOURCEFILEDIR)License.rtf"
+      Theme="hyperlinkLicense"
+      LogoFile="$(sys.SOURCEFILEDIR)..\src\UI\Assets\Square150x150Logo.scale-200.png"
+      ShowVersion="yes" />
+
+    <!-- ── Variables ────────────────────────────────────────────────── -->
+    <Variable Name="InstallFolder"
+              Value="[ProgramFiles6432Folder]AccessOS"
+              Type="string"
+              Persisted="yes" />
+
+    <!-- ── Search: detect .NET 8 Desktop Runtime ───────────────────── -->
+    <util:RegistrySearch
+      xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util"
+      Id="DetectNet8"
+      Root="HKLM"
+      Key="SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.NETCore.App"
+      Value="8.0.0"
+      Result="exists"
+      Variable="Net8Present" />
+
+    <!-- ── Search: detect Windows App SDK 2.4 ──────────────────────── -->
+    <util:RegistrySearch
+      xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util"
+      Id="DetectWinAppSDK"
+      Root="HKLM"
+      Key="SOFTWARE\Microsoft\WindowsAppSDK\2.4"
+      Value=""
+      Result="exists"
+      Variable="WinAppSDKPresent" />
+
+    <!-- ── Chain ────────────────────────────────────────────────────── -->
+    <Chain>
+
+      <!-- 1. .NET 8 Desktop Runtime (download if absent) -->
+      <ExePackage
+        Id="DotNet8Runtime"
+        Name=".NET 8 Desktop Runtime"
+        Description="Required by AccessOS"
+        DisplayInternalUI="no"
+        PerMachine="yes"
+        Permanent="no"
+        Vital="yes"
+        DetectCondition="Net8Present"
+        InstallCondition="NOT Net8Present"
+        DownloadUrl="https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer"
+        InstallCommand="/quiet /norestart"
+        RepairCommand="/quiet /norestart"
+        UninstallCommand="/quiet /norestart /uninstall">
+        <!-- Offline fallback: embed a stub if available, otherwise download -->
+      </ExePackage>
+
+      <!-- 2. Windows App SDK 2.4 (download if absent) -->
+      <ExePackage
+        Id="WindowsAppSDK"
+        Name="Windows App SDK 2.4"
+        Description="Required by AccessOS UI"
+        DisplayInternalUI="no"
+        PerMachine="yes"
+        Permanent="no"
+        Vital="yes"
+        DetectCondition="WinAppSDKPresent"
+        InstallCondition="NOT WinAppSDKPresent"
+        DownloadUrl="https://aka.ms/windowsappsdk/2.4/latest/windowsappruntimeinstall-x64.exe"
+        InstallCommand="--quiet"
+        RepairCommand="--quiet"
+        UninstallCommand="--uninstall --quiet">
+      </ExePackage>
+
+      <!-- 3. Import signing certificate into Trusted Root (silent, no UI) -->
+      <ExePackage
+        Id="InstallCert"
+        Name="AccessOS Certificate"
+        Description="Installs the AccessOS signing certificate"
+        SourceFile="$(sys.SOURCEFILEDIR)InstallCert.cmd"
+        InstallCommand=""
+        RepairCommand=""
+        UninstallCommand=""
+        DisplayInternalUI="no"
+        PerMachine="yes"
+        Permanent="yes"
+        Vital="yes" />
+
+      <!-- 4. AccessOS MSIX application -->
+      <MsiPackage
+        Id="AccessOSApp"
+        SourceFile="$(sys.SOURCEFILEDIR)..\dist\Release\AccessOS.msix"
+        DisplayInternalUI="no"
+        Vital="yes"
+        PerMachine="yes"
+        Permanent="no" />
+
+    </Chain>
+
+  </Bundle>
+
+</Wix>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AccessOS.UI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "AccessOS.UI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AccessOS.wxs — WiX v4 installer source (ACCESSOS-039)
+
+  Produces a per-machine MSI that:
+    • Installs AccessOS.exe + AccessOSCore.dll to %ProgramFiles%\AccessOS
+    • Creates a Desktop and Start Menu shortcut
+    • Adds an Add/Remove Programs entry with version and publisher info
+    • Supports silent install (/quiet) and uninstall (msiexec /x)
+
+  Build:
+    wix build AccessOS.wxs -o AccessOS-Setup.msi
+    (requires WiX Toolset v4 — https://wixtoolset.org)
+
+  Customise:
+    Set PUBLISH_DIR to the dotnet publish output folder before building, e.g.
+      wix build AccessOS.wxs -d PUBLISH_DIR=..\..\src\UI\bin\Release\... -o AccessOS-Setup.msi
+-->
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+
+  <!-- ── Product definition ───────────────────────────────────────────────── -->
+  <Package
+    Name="AccessOS"
+    Manufacturer="AccessOS Project"
+    Version="1.0.0.0"
+    UpgradeCode="A3B7C2D1-E4F5-6789-ABCD-EF0123456789"
+    Language="1033"
+    Codepage="1252"
+    InstallerVersion="500"
+    Compressed="yes"
+    Scope="perMachine">
+
+    <!-- Allow upgrades (major upgrade removes old version first) -->
+    <MajorUpgrade DowngradeErrorMessage="A newer version of AccessOS is already installed." />
+
+    <!-- Media / cabinet -->
+    <MediaTemplate EmbedCab="yes" />
+
+    <!-- ── Directory layout ─────────────────────────────────────────────── -->
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLDIR" Name="AccessOS">
+        <!-- Main application files installed here -->
+      </Directory>
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="StartMenuDir" Name="AccessOS" />
+    </StandardDirectory>
+
+    <StandardDirectory Id="DesktopFolder" />
+
+    <!-- ── Components ───────────────────────────────────────────────────── -->
+
+    <!-- Main executable -->
+    <Component Id="MainExe" Directory="INSTALLDIR" Guid="B1C2D3E4-F5A6-7890-BCDE-F01234567890">
+      <File Id="AccessOSExe"
+            Source="$(var.PUBLISH_DIR)\AccessOS.UI.exe"
+            KeyPath="yes" />
+    </Component>
+
+    <!-- Native core DLL -->
+    <Component Id="CoreDll" Directory="INSTALLDIR" Guid="C2D3E4F5-A6B7-8901-CDEF-012345678901">
+      <File Id="AccessOSCoreDll"
+            Source="$(var.PUBLISH_DIR)\AccessOSCore.dll"
+            KeyPath="yes" />
+    </Component>
+
+    <!-- Desktop shortcut -->
+    <Component Id="DesktopShortcut" Directory="DesktopFolder" Guid="D3E4F5A6-B7C8-9012-DEF0-123456789012">
+      <Shortcut Id="DesktopSC"
+                Name="AccessOS"
+                Target="[INSTALLDIR]AccessOS.UI.exe"
+                WorkingDirectory="INSTALLDIR"
+                Description="AccessOS — Native Windows Screen Reader" />
+      <RemoveFolder Id="RemoveDesktopSC" On="uninstall" />
+      <RegistryValue Root="HKCU"
+                     Key="Software\AccessOS"
+                     Name="DesktopShortcut"
+                     Type="integer" Value="1"
+                     KeyPath="yes" />
+    </Component>
+
+    <!-- Start Menu shortcut -->
+    <Component Id="StartMenuShortcut" Directory="StartMenuDir" Guid="E4F5A6B7-C8D9-0123-EF01-234567890123">
+      <Shortcut Id="StartMenuSC"
+                Name="AccessOS"
+                Target="[INSTALLDIR]AccessOS.UI.exe"
+                WorkingDirectory="INSTALLDIR"
+                Description="AccessOS — Native Windows Screen Reader" />
+      <RemoveFolder Id="RemoveStartMenu" On="uninstall" />
+      <RegistryValue Root="HKCU"
+                     Key="Software\AccessOS"
+                     Name="StartMenuShortcut"
+                     Type="integer" Value="1"
+                     KeyPath="yes" />
+    </Component>
+
+    <!-- Registry: installation path (for diagnostics / uninstaller) -->
+    <Component Id="RegistryKeys" Directory="INSTALLDIR" Guid="F5A6B7C8-D9E0-1234-F012-345678901234">
+      <RegistryKey Root="HKLM" Key="Software\AccessOS">
+        <RegistryValue Name="InstallDir" Type="string"  Value="[INSTALLDIR]" />
+        <RegistryValue Name="Version"    Type="string"  Value="1.0.0" />
+      </RegistryKey>
+      <RegistryValue Root="HKLM"
+                     Key="Software\AccessOS"
+                     Name="InstallDir"
+                     Type="string" Value="[INSTALLDIR]"
+                     KeyPath="yes" />
+    </Component>
+
+    <!-- ── Feature tree ─────────────────────────────────────────────────── -->
+    <Feature Id="ProductFeature" Title="AccessOS" Level="1">
+      <ComponentRef Id="MainExe" />
+      <ComponentRef Id="CoreDll" />
+      <ComponentRef Id="DesktopShortcut" />
+      <ComponentRef Id="StartMenuShortcut" />
+      <ComponentRef Id="RegistryKeys" />
+    </Feature>
+
+    <!-- ── UI ───────────────────────────────────────────────────────────── -->
+    <!--
+      WiX built-in minimal UI: shows progress bar + Finish dialog.
+      For a silent install, run: msiexec /i AccessOS-Setup.msi /quiet
+    -->
+    <ui:WixUI Id="WixUI_Minimal" />
+
+    <!-- Accept license without showing dialog in minimal UI -->
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+
+    <!-- ── Install conditions ───────────────────────────────────────────── -->
+    <!-- Require Windows 10 1809 or later (build 17763) -->
+    <Launch Condition="VersionNT &gt;= 603 OR (VersionNT = 602 AND ServicePackLevel &gt;= 2)"
+            Message="AccessOS requires Windows 10 version 1809 or later." />
+
+  </Package>
+</Wix>

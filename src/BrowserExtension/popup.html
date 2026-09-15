@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+  AccessOS/src/BrowserExtension/popup.html
+  Extension popup — shows connection state and the currently focused element.
+  No external scripts or stylesheets. All styles are inlined.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AccessOS</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #1f2328;
+      background: #ffffff;
+      width: 300px;
+      min-height: 160px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      background: #f7f8fa;
+    }
+    .header-title {
+      font-weight: 600;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    /* Status dot */
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot.connected    { background: #22c55e; }
+    .dot.disconnected { background: #6b7280; }
+    .dot.error        { background: #ef4444; }
+
+    /* Body */
+    .body { padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+
+    /* Info row */
+    .row {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      column-gap: 8px;
+      align-items: start;
+    }
+    .label {
+      font-size: 11px;
+      color: #57606a;
+      padding-top: 1px;
+    }
+    .value {
+      font-size: 12px;
+      word-break: break-word;
+    }
+    .value.empty { color: #9ca3af; font-style: italic; }
+
+    /* Role badge */
+    .role-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-family: Consolas, monospace;
+      background: #f0f4ff;
+      border: 1px solid #c7d2fe;
+      border-radius: 3px;
+      padding: 0 4px;
+      color: #3730a3;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 6px 14px 8px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 11px;
+      color: #9ca3af;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div id="statusDot" class="dot disconnected"></div>
+    <span class="header-title">AccessOS</span>
+    <span id="connectionLabel" style="font-size:11px;color:#57606a;">Disconnected</span>
+  </div>
+
+  <div class="body">
+    <div class="row">
+      <span class="label">Focused</span>
+      <span id="focusedName" class="value empty">(none)</span>
+    </div>
+    <div class="row">
+      <span class="label">Role</span>
+      <span id="focusedRole" class="value empty">—</span>
+    </div>
+    <div class="row">
+      <span class="label">Page</span>
+      <span id="pageUrl" class="value empty">(none)</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>AccessOS v0.1</span>
+    <span id="timestamp"></span>
+  </div>
+
+  <script type="module" src="dist/popup.js"></script>
+</body>
+</html>

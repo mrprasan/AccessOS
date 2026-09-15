@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    AccessOS/src/UI/MainPage.xaml
+    Screen reader control panel.
+
+    Layout (top-to-bottom):
+      1. Status bar  — running indicator + Start / Stop / Pause buttons
+      2. Focus panel — name, role, value, state of the focused element
+      3. Speech panel — voice selector, rate slider, volume slider
+      4. Shortcuts   — quick reference card
+      5. Activity log — last N speech/focus events
+-->
+<Page
+    x:Class="AccessOS_UI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:AccessOS_UI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Spacing="16" Padding="24,16,24,24" MaxWidth="800">
+
+            <!-- ── 1. Status bar ─────────────────────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16,12">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- State indicator dot + label -->
+                    <StackPanel Grid.Column="0"
+                                Orientation="Horizontal"
+                                Spacing="8"
+                                VerticalAlignment="Center">
+                        <Ellipse x:Name="StateDot"
+                                 Width="10" Height="10"
+                                 VerticalAlignment="Center">
+                            <Ellipse.Fill>
+                                <SolidColorBrush x:Name="StateDotBrush" Color="#6B7280" />
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <TextBlock x:Name="StateLabel"
+                                   Text="Stopped"
+                                   FontWeight="SemiBold"
+                                   VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Keyboard shortcut hint -->
+                    <TextBlock Grid.Column="1"
+                               Text="Caps Lock = AccessOS modifier key"
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                               FontSize="12"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center" />
+
+                    <!-- Control buttons -->
+                    <StackPanel Grid.Column="2"
+                                Orientation="Horizontal"
+                                Spacing="8">
+                        <Button x:Name="StartButton"
+                                Content="Start"
+                                Style="{ThemeResource AccentButtonStyle}"
+                                Click="StartButton_Click"
+                                AutomationProperties.Name="Start screen reader" />
+                        <Button x:Name="PauseButton"
+                                Content="Pause"
+                                IsEnabled="False"
+                                Click="PauseButton_Click"
+                                AutomationProperties.Name="Pause screen reader" />
+                        <Button x:Name="StopButton"
+                                Content="Stop"
+                                IsEnabled="False"
+                                Click="StopButton_Click"
+                                AutomationProperties.Name="Stop screen reader" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- ── 2. Focused element panel ─────────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="Focused Element"
+                               Style="{ThemeResource BodyStrongTextBlockStyle}" />
+
+                    <Grid ColumnSpacing="12" RowSpacing="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0"
+                                   Text="Name"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   FontSize="12" VerticalAlignment="Center" />
+                        <TextBlock x:Name="FocusedNameText"
+                                   Grid.Row="0" Grid.Column="1"
+                                   Text="(none)"
+                                   TextWrapping="Wrap"
+                                   AutomationProperties.Name="Focused element name" />
+
+                        <TextBlock Grid.Row="1" Grid.Column="0"
+                                   Text="Role"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   FontSize="12" VerticalAlignment="Center" />
+                        <TextBlock x:Name="FocusedRoleText"
+                                   Grid.Row="1" Grid.Column="1"
+                                   Text=""
+                                   AutomationProperties.Name="Focused element role" />
+
+                        <TextBlock Grid.Row="2" Grid.Column="0"
+                                   Text="Value"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   FontSize="12" VerticalAlignment="Center" />
+                        <TextBlock x:Name="FocusedValueText"
+                                   Grid.Row="2" Grid.Column="1"
+                                   Text=""
+                                   TextWrapping="Wrap"
+                                   AutomationProperties.Name="Focused element value" />
+
+                        <TextBlock Grid.Row="3" Grid.Column="0"
+                                   Text="State"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   FontSize="12" VerticalAlignment="Center" />
+                        <TextBlock x:Name="FocusedStateText"
+                                   Grid.Row="3" Grid.Column="1"
+                                   Text=""
+                                   AutomationProperties.Name="Focused element state" />
+
+                        <TextBlock Grid.Row="4" Grid.Column="0"
+                                   Text="Context"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   FontSize="12" VerticalAlignment="Center" />
+                        <TextBlock x:Name="ContextTypeText"
+                                   Grid.Row="4" Grid.Column="1"
+                                   Text="Unknown"
+                                   AutomationProperties.Name="Application context type" />
+
+                        <!-- Re-read button spans both columns -->
+                        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                                Content="Read Focused Element"
+                                Click="ReadFocused_Click"
+                                Padding="8,4"
+                                FontSize="12"
+                                HorizontalAlignment="Left"
+                                AutomationProperties.Name="Re-announce the focused element" />
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <!-- ── 3. Speech settings ────────────────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="Speech Settings"
+                               Style="{ThemeResource BodyStrongTextBlockStyle}" />
+
+                    <!-- Voice selector -->
+                    <StackPanel Spacing="4">
+                        <TextBlock Text="Voice"
+                                   FontSize="12"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        <ComboBox x:Name="VoiceComboBox"
+                                  HorizontalAlignment="Stretch"
+                                  SelectionChanged="VoiceComboBox_SelectionChanged"
+                                  AutomationProperties.Name="Select speech voice" />
+                    </StackPanel>
+
+                    <!-- Verbosity selector -->
+                    <StackPanel Spacing="4">
+                        <TextBlock Text="Verbosity"
+                                   FontSize="12"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        <ComboBox x:Name="VerbosityComboBox"
+                                  HorizontalAlignment="Stretch"
+                                  SelectionChanged="VerbosityComboBox_SelectionChanged"
+                                  AutomationProperties.Name="Select verbosity level" />
+                    </StackPanel>
+
+                    <!-- Rate slider -->
+                    <StackPanel Spacing="4">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Speech Rate"
+                                       FontSize="12"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       VerticalAlignment="Center" />
+                            <TextBlock x:Name="RateValueText"
+                                       Grid.Column="1"
+                                       Text="1.0×"
+                                       FontSize="12"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        </Grid>
+                        <Slider x:Name="RateSlider"
+                                Minimum="0.5" Maximum="3.0" StepFrequency="0.1"
+                                Value="1.0"
+                                ValueChanged="RateSlider_ValueChanged"
+                                AutomationProperties.Name="Speech rate"
+                                AutomationProperties.HelpText="Adjust speaking speed from 0.5x to 3x" />
+                    </StackPanel>
+
+                    <!-- Volume slider -->
+                    <StackPanel Spacing="4">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Volume"
+                                       FontSize="12"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       VerticalAlignment="Center" />
+                            <TextBlock x:Name="VolumeValueText"
+                                       Grid.Column="1"
+                                       Text="100%"
+                                       FontSize="12"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        </Grid>
+                        <Slider x:Name="VolumeSlider"
+                                Minimum="0" Maximum="100" StepFrequency="5"
+                                Value="100"
+                                ValueChanged="VolumeSlider_ValueChanged"
+                                AutomationProperties.Name="Speech volume"
+                                AutomationProperties.HelpText="Adjust speech volume from 0 to 100 percent" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- ── 4. Browse Mode settings ──────────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="Browse Mode"
+                               Style="{ThemeResource BodyStrongTextBlockStyle}" />
+
+                    <!-- Enable browse mode toggle -->
+                    <ToggleSwitch x:Name="BrowseModeToggle"
+                                  Header="Enable Browse Mode"
+                                  IsOn="False"
+                                  Toggled="BrowseModeToggle_Toggled"
+                                  AutomationProperties.Name="Enable or disable browse mode" />
+
+                    <!-- Auto-detect documents -->
+                    <ToggleSwitch x:Name="BrowseAutoDetectToggle"
+                                  Header="Auto-detect documents"
+                                  IsOn="True"
+                                  Toggled="BrowseAutoDetectToggle_Toggled"
+                                  AutomationProperties.Name="Automatically enter browse mode for documents" />
+
+                    <!-- Reading unit -->
+                    <StackPanel Spacing="4">
+                        <TextBlock Text="Reading unit"
+                                   FontSize="12"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        <ComboBox x:Name="BrowseReadUnitCombo"
+                                  HorizontalAlignment="Stretch"
+                                  SelectionChanged="BrowseReadUnitCombo_SelectionChanged"
+                                  AutomationProperties.Name="Select browse mode reading unit" />
+                    </StackPanel>
+
+                    <!-- Navigation hint text -->
+                    <TextBlock Text="Use H / Shift+H for headings · K / Shift+K for links · F / Shift+F for form fields"
+                               FontSize="11"
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                               TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <!-- ── 5. Audio / Earcon settings ───────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="Audio &amp; Earcons"
+                               Style="{ThemeResource BodyStrongTextBlockStyle}" />
+
+                    <!-- Master earcon enable -->
+                    <ToggleSwitch x:Name="EarconMasterToggle"
+                                  Header="Enable earcons (audio cues)"
+                                  IsOn="True"
+                                  Toggled="EarconMasterToggle_Toggled"
+                                  AutomationProperties.Name="Enable or disable all earcon audio cues" />
+
+                    <!-- Earcon volume slider -->
+                    <StackPanel Spacing="4">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Earcon Volume"
+                                       FontSize="12"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       VerticalAlignment="Center" />
+                            <TextBlock x:Name="EarconVolumeValueText"
+                                       Grid.Column="1"
+                                       Text="80%"
+                                       FontSize="12"
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        </Grid>
+                        <Slider x:Name="EarconVolumeSlider"
+                                Minimum="0" Maximum="100" StepFrequency="5"
+                                Value="80"
+                                ValueChanged="EarconVolumeSlider_ValueChanged"
+                                AutomationProperties.Name="Earcon volume"
+                                AutomationProperties.HelpText="Adjust earcon volume from 0 to 100 percent" />
+                    </StackPanel>
+
+                    <!-- Per-earcon toggles -->
+                    <StackPanel Spacing="6">
+                        <TextBlock Text="Individual earcons"
+                                   FontSize="12"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        <ToggleSwitch x:Name="EarconFocusToggle"
+                                      Header="Focus changed"
+                                      IsOn="True"
+                                      Toggled="EarconFocusToggle_Toggled"
+                                      AutomationProperties.Name="Enable focus change earcon" />
+                        <ToggleSwitch x:Name="EarconErrorToggle"
+                                      Header="Error / alert"
+                                      IsOn="True"
+                                      Toggled="EarconErrorToggle_Toggled"
+                                      AutomationProperties.Name="Enable error earcon" />
+                        <ToggleSwitch x:Name="EarconLinkToggle"
+                                      Header="Link"
+                                      IsOn="True"
+                                      Toggled="EarconLinkToggle_Toggled"
+                                      AutomationProperties.Name="Enable link earcon" />
+                        <ToggleSwitch x:Name="EarconButtonToggle"
+                                      Header="Button"
+                                      IsOn="True"
+                                      Toggled="EarconButtonToggle_Toggled"
+                                      AutomationProperties.Name="Enable button earcon" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- ── 6. System settings ────────────────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="System"
+                               Style="{ThemeResource BodyStrongTextBlockStyle}" />
+                    <ToggleSwitch x:Name="AutoStartToggle"
+                                  Header="Start AccessOS with Windows"
+                                  IsOn="False"
+                                  Loaded="AutoStartToggle_Loaded"
+                                  Toggled="AutoStartToggle_Toggled"
+                                  AutomationProperties.Name="Enable or disable auto-start at Windows login" />
+                </StackPanel>
+            </Border>
+
+            <!-- ── 7. Keyboard shortcuts reference ───────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="10">
+                    <TextBlock Text="Keyboard Shortcuts"
+                               Style="{ThemeResource BodyStrongTextBlockStyle}" />
+
+                    <Grid ColumnSpacing="24" RowSpacing="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition /><RowDefinition /><RowDefinition />
+                            <RowDefinition /><RowDefinition /><RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <!-- Left column -->
+                        <local:ShortcutRow Grid.Row="0" Grid.Column="0" Keys="CapsLock + Arrow" Action="Read next / previous element" />
+                        <local:ShortcutRow Grid.Row="1" Grid.Column="0" Keys="CapsLock + H" Action="Next heading" />
+                        <local:ShortcutRow Grid.Row="2" Grid.Column="0" Keys="CapsLock + K" Action="Next link" />
+                        <local:ShortcutRow Grid.Row="3" Grid.Column="0" Keys="CapsLock + B" Action="Next button" />
+                        <local:ShortcutRow Grid.Row="4" Grid.Column="0" Keys="CapsLock + E" Action="Next edit field" />
+                        <local:ShortcutRow Grid.Row="5" Grid.Column="0" Keys="CapsLock + Space" Action="Activate element" />
+
+                        <!-- Right column -->
+                        <local:ShortcutRow Grid.Row="0" Grid.Column="1" Keys="CapsLock + Ctrl + S" Action="Stop speech" />
+                        <local:ShortcutRow Grid.Row="1" Grid.Column="1" Keys="CapsLock + R" Action="Read from here" />
+                        <local:ShortcutRow Grid.Row="2" Grid.Column="1" Keys="CapsLock + T" Action="Read window title" />
+                        <local:ShortcutRow Grid.Row="3" Grid.Column="1" Keys="CapsLock + A" Action="Read all" />
+                        <local:ShortcutRow Grid.Row="4" Grid.Column="1" Keys="CapsLock + F1" Action="Help" />
+                        <local:ShortcutRow Grid.Row="5" Grid.Column="1" Keys="CapsLock + F4" Action="Exit AccessOS" />
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <!-- ── 5. Activity log ───────────────────────────────────────── -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel Spacing="8">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Activity Log"
+                                   Style="{ThemeResource BodyStrongTextBlockStyle}" />
+                        <Button Grid.Column="1"
+                                Content="Clear"
+                                Click="ClearLog_Click"
+                                FontSize="12"
+                                Padding="8,4"
+                                AutomationProperties.Name="Clear activity log" />
+                    </Grid>
+
+                    <Border Height="160"
+                            Background="{ThemeResource LayerFillColorDefaultBrush}"
+                            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                            BorderThickness="1"
+                            CornerRadius="4">
+                        <ScrollViewer x:Name="LogScroller"
+                                      VerticalScrollBarVisibility="Auto"
+                                      Padding="8">
+                            <ItemsControl x:Name="LogList">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}"
+                                                   FontSize="11"
+                                                   FontFamily="Consolas"
+                                                   TextWrapping="Wrap"
+                                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </Border>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>

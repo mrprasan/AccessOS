@@ -1,0 +1,15 @@
+{
+  "name": "accessos-browser-extension",
+  "version": "0.1.0",
+  "description": "AccessOS browser extension — feeds web accessibility data to the native screen reader core.",
+  "private": true,
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch",
+    "clean": "node -e \"const fs=require('fs');['dist'].forEach(d=>{try{fs.rmSync(d,{recursive:true})}catch{}});\""
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.298",
+    "typescript": "^5.8.3"
+  }
+}

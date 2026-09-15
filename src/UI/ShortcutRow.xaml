@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    AccessOS/src/UI/ShortcutRow.xaml
+    A single shortcut row: key badge + action description.
+    Used inside the keyboard shortcuts reference panel on MainPage.
+-->
+<UserControl
+    x:Class="AccessOS_UI.ShortcutRow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" Spacing="8" Margin="0,2">
+        <!-- Key badge -->
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="4"
+                Padding="5,2"
+                VerticalAlignment="Center">
+            <TextBlock x:Name="KeysText"
+                       FontSize="11"
+                       FontFamily="Consolas"
+                       Foreground="{ThemeResource TextFillColorPrimaryBrush}" />
+        </Border>
+
+        <!-- Action description -->
+        <TextBlock x:Name="ActionText"
+                   FontSize="12"
+                   VerticalAlignment="Center"
+                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                   TextWrapping="Wrap" />
+    </StackPanel>
+</UserControl>

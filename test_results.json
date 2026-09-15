@@ -1,0 +1,5040 @@
+{
+  "tests": 453,
+  "failures": 0,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2026-09-14T12:19:22Z",
+  "time": "0.919s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ResultTest",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "OkResultIsOk",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 11,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ResultTest"
+        },
+        {
+          "name": "FailResultIsError",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 18,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ResultTest"
+        },
+        {
+          "name": "VoidOkResultIsOk",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 29,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ResultTest"
+        },
+        {
+          "name": "VoidFailResultIsError",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 35,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ResultTest"
+        }
+      ]
+    },
+    {
+      "name": "ErrorCategoryTest",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "CategoryNameIsAccessOS",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 47,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ErrorCategoryTest"
+        },
+        {
+          "name": "SuccessMessageIsCorrect",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 51,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ErrorCategoryTest"
+        },
+        {
+          "name": "UnknownCodeReturnsUnknownError",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 58,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ErrorCategoryTest"
+        },
+        {
+          "name": "MakeErrorProducesCorrectCode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 65,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ErrorCategoryTest"
+        },
+        {
+          "name": "DifferentErrorCodesAreNotEqual",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessError.cpp",
+          "line": 71,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ErrorCategoryTest"
+        }
+      ]
+    },
+    {
+      "name": "LoggerTest",
+      "tests": 9,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "InfoMessageIsRecorded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 44,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "WarningMessageIsRecorded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 53,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "ErrorMessageIsRecorded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 60,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "CriticalMessageIsRecorded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 67,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "DebugMessageRecordedWhenLevelIsDebug",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 74,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "DebugMessageSuppressedWhenLevelIsInfo",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 82,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "LowerLevelMessagesSuppressed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 89,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "NullSinkProducesNoOutput",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 102,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        },
+        {
+          "name": "MultipleMessagesRecordedInOrder",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_Logger.cpp",
+          "line": 109,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LoggerTest"
+        }
+      ]
+    },
+    {
+      "name": "AccessStateTest",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "HasStateTrueWhenFlagSet",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 11,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessStateTest"
+        },
+        {
+          "name": "HasStateFalseWhenFlagNotSet",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 17,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessStateTest"
+        },
+        {
+          "name": "NoneStateHasNoFlags",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 23,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessStateTest"
+        },
+        {
+          "name": "MultipleStateFlagsCanBeSet",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 30,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessStateTest"
+        }
+      ]
+    },
+    {
+      "name": "AccessNodeTest",
+      "tests": 6,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "DefaultConstructedNodeHasExpectedDefaults",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 44,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessNodeTest"
+        },
+        {
+          "name": "IsFocusedReflectsState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 62,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessNodeTest"
+        },
+        {
+          "name": "IsDisabledReflectsState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 70,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessNodeTest"
+        },
+        {
+          "name": "IsHiddenReflectsState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 78,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessNodeTest"
+        },
+        {
+          "name": "IsProtectedReflectsState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 86,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessNodeTest"
+        },
+        {
+          "name": "PopulatedNodeRetainsAllFields",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 113,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessNodeTest"
+        }
+      ]
+    },
+    {
+      "name": "AccessBoundsTest",
+      "tests": 3,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "DefaultBoundsIsEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 96,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessBoundsTest"
+        },
+        {
+          "name": "NonZeroDimensionsNotEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 101,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessBoundsTest"
+        },
+        {
+          "name": "ZeroWidthIsEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessNode.cpp",
+          "line": 106,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AccessBoundsTest"
+        }
+      ]
+    },
+    {
+      "name": "UIARoleMapTest",
+      "tests": 24,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.001s",
+      "testsuite": [
+        {
+          "name": "ButtonMapsToButton",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 12,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "CheckBoxMapsToCheckBox",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 16,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "EditMapsToEdit",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 20,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "HyperlinkMapsToLink",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 24,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "ImageMapsToImage",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 28,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "ListMapsToListBox",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 32,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "ListItemMapsToListItem",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 36,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "MenuMapsToMenu",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 40,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "MenuBarMapsToMenuBar",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 44,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "MenuItemMapsToMenuItem",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 48,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "RadioButtonMapsToRadioButton",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 52,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "TabControlMapsToTabControl",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 56,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "TabItemMapsToTab",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 60,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "TextMapsToStaticText",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 64,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "TreeMapsToTree",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "TreeItemMapsToTreeItem",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 72,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "WindowMapsToWindow",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 76,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "DocumentMapsToDocument",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 80,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "TableMapsToTable",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 84,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "DataGridMapsToTable",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 88,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "PaneMapsToPane",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 92,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "GroupMapsToGroup",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 96,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "UnknownControlTypeReturnsUnknown",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 100,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        },
+        {
+          "name": "CustomControlTypeReturnsUnknown",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_UIARoleMap.cpp",
+          "line": 105,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "UIARoleMapTest"
+        }
+      ]
+    },
+    {
+      "name": "EventQueueTest",
+      "tests": 9,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.103s",
+      "testsuite": [
+        {
+          "name": "EnqueuedEventIsDequeued",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 26,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "DequeueTimesOutWhenEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 36,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.059s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "MultipleEventsDequeueInOrder",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 42,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "StopCausesDequeueToReturnNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 62,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "EnqueueAfterStopIsIgnored",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 69,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "StopWakesBlockedDequeue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 76,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.032s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "QueueDropsOldestWhenFull",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 94,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.007s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "SizeReflectsQueueDepth",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 109,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventQueueTest"
+        },
+        {
+          "name": "ConcurrentEnqueueIsThreadSafe",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventQueue.cpp",
+          "line": 125,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "EventQueueTest"
+        }
+      ]
+    },
+    {
+      "name": "EventEngineTest",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ListenerReceivesEnqueuedEvent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventEngine.cpp",
+          "line": 42,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventEngineTest"
+        },
+        {
+          "name": "MultipleListenersAllReceiveEvent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventEngine.cpp",
+          "line": 66,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventEngineTest"
+        },
+        {
+          "name": "EventTimestampIsPreserved",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventEngine.cpp",
+          "line": 87,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventEngineTest"
+        },
+        {
+          "name": "EventTypeIsPreservedThroughQueue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_EventEngine.cpp",
+          "line": 103,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "EventEngineTest"
+        }
+      ]
+    },
+    {
+      "name": "SemanticCacheTest",
+      "tests": 14,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.004s",
+      "testsuite": [
+        {
+          "name": "EmptyCacheReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 26,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "UpdateAndGetNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 33,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "UpdateReplacesExistingNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 43,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "RemoveDeletesNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 53,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "ClearRemovesAllNodes",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 62,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "SetAndGetFocusedNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 74,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "RemoveFocusedNodeClearsFocus",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 85,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "ClearAlsoResetsFocus",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 94,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "GetChildrenReturnsOnlyDirectChildren",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 105,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "GetChildrenReturnsEmptyWhenNone",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 116,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "ContainsReturnsTrueForExistingNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "FindAllMatchesByRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 133,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "FindAllReturnsEmptyWhenNoMatch",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 146,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticCacheTest"
+        },
+        {
+          "name": "ConcurrentUpdatesAreThreadSafe",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticCache.cpp",
+          "line": 158,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.003s",
+          "classname": "SemanticCacheTest"
+        }
+      ]
+    },
+    {
+      "name": "SemanticNormalizerTest",
+      "tests": 11,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "TrimsLeadingAndTrailingWhitespace",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 23,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "TrimsDescription",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 28,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "TrimsHelpText",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 35,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "EmptyNameRemainsEmptyForNonStaticText",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 42,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "StaticTextFallsBackToValueWhenNameEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 47,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "StaticTextKeepsNameWhenPresent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 53,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "EditRoleGetsMultiLineState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 61,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "MultiLineEditRoleGetsMultiLineState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 66,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "ButtonDoesNotGetMultiLineState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 71,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "PasswordEditGetsProtectedState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 76,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        },
+        {
+          "name": "NormalizationPreservesExistingState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 81,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticNormalizerTest"
+        }
+      ]
+    },
+    {
+      "name": "SemanticModelTest",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.001s",
+      "testsuite": [
+        {
+          "name": "FocusChangedEventUpdatesCache",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 91,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticModelTest"
+        },
+        {
+          "name": "FocusObserverIsCalledOnFocusChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 111,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticModelTest"
+        },
+        {
+          "name": "ZeroIdFocusEventIsIgnored",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 134,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticModelTest"
+        },
+        {
+          "name": "PropertyChangedUpdatesExistingNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 148,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticModelTest"
+        },
+        {
+          "name": "ClearResetsCache",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SemanticNormalizer.cpp",
+          "line": 174,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SemanticModelTest"
+        }
+      ]
+    },
+    {
+      "name": "FocusManagerTest",
+      "tests": 14,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.007s",
+      "testsuite": [
+        {
+          "name": "InitialStateHasNoFocus",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 33,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "FirstFocusEventIsRecorded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 43,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "FocusChangeCountIncrements",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 57,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "DuplicateFocusEventIsSuppressed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 70,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "DifferentElementIsNotSuppressed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 82,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "MultipleDuplicatesAllSuppressed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 94,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "PreviousFocusIsRetainedAfterChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 110,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "PreviousFocusIsNulloptAfterOnlyOneChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "HistoryIsNewestFirst",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 136,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "HistoryRespectesMaxCountParameter",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 152,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "HistoryDoesNotExceedMaxSize",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 167,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "ObserverIsCalledOnGenuineChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 183,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "ObserverNotCalledOnDuplicate",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 201,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        },
+        {
+          "name": "MultipleObserversAllReceiveNotification",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_FocusManager.cpp",
+          "line": 215,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FocusManagerTest"
+        }
+      ]
+    },
+    {
+      "name": "SpeechFormatterTest",
+      "tests": 15,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ButtonFormatIsNameCommaRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 29,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "CheckboxCheckedFormat",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 36,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "CheckboxUncheckedFormat",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 44,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "HeadingFormatIncludesLevel",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 50,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "EditFormatIsNameCommaEdit",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 58,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "LinkFormat",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 66,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "PasswordFieldNeverSpeaksValue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 74,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "MinimalPolicyOmitsRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 85,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "MinimalPolicyOmitsState",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 91,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "DetailedPolicyIncludesDescription",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 98,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "PositionAnnouncedWhenPolicyEnabled",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 108,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "PositionNotAnnouncedByDefault",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 117,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "DisabledStateIsAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 127,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "ExpandedStateIsAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 133,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        },
+        {
+          "name": "CollapsedStateIsAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 139,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechFormatterTest"
+        }
+      ]
+    },
+    {
+      "name": "SpeechQueueTest",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.024s",
+      "testsuite": [
+        {
+          "name": "HighPriorityDequeuedBeforeLow",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 147,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechQueueTest"
+        },
+        {
+          "name": "CancelUpToRemovesLowerPriority",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 170,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechQueueTest"
+        },
+        {
+          "name": "CancelAllEmptiesQueue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 189,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechQueueTest"
+        },
+        {
+          "name": "CancelPreviousRemovesLowerOnEnqueue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 201,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SpeechQueueTest"
+        },
+        {
+          "name": "StopWakesBlockedDequeue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SpeechFormatter.cpp",
+          "line": 221,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.024s",
+          "classname": "SpeechQueueTest"
+        }
+      ]
+    },
+    {
+      "name": "CommandManagerTest",
+      "tests": 10,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.003s",
+      "testsuite": [
+        {
+          "name": "RegisterAndGetById",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 17,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "GetUnknownReturnsNull",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 23,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "CountAfterRegister",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 28,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "RegisterReplacesDuplicate",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 36,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "ExecuteInvokesCommand",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 48,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "ExecuteUnknownReturnsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 57,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "AllIdsContainsRegistered",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 62,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "RegisterSharedPtrCommand",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 101,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "RegisterNullptrIsIgnored",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 108,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandManagerTest"
+        },
+        {
+          "name": "ConcurrentExecuteIsSafe",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 116,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "CommandManagerTest"
+        }
+      ]
+    },
+    {
+      "name": "LambdaCommandTest",
+      "tests": 3,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "IdAndDisplayName",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 80,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LambdaCommandTest"
+        },
+        {
+          "name": "ExecuteCallsLambda",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 86,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LambdaCommandTest"
+        },
+        {
+          "name": "NullLambdaDoesNotCrash",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandManager.cpp",
+          "line": 94,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "LambdaCommandTest"
+        }
+      ]
+    },
+    {
+      "name": "ShortcutManagerTest",
+      "tests": 14,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "BindAndLookup",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 18,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "LookupUnboundReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 26,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "CountAfterBind",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 31,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "DuplicateBindReturnsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 41,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "HasConflictTrue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 49,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "HasConflictFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 55,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "UnbindExistingReturnsTrue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 62,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "UnbindNonExistentReturnsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 70,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "RebindUpdatesCommandId",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 77,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "RebindNonExistentReturnsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 84,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "AllBindingsContainsAll",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 91,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "AllBindingsEmptyWhenNone",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 99,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "CtrlShiftCombo",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 106,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        },
+        {
+          "name": "HasModifierHelper",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ShortcutManager.cpp",
+          "line": 117,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ShortcutManagerTest"
+        }
+      ]
+    },
+    {
+      "name": "NavigationEngineTest",
+      "tests": 21,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.002s",
+      "testsuite": [
+        {
+          "name": "GetFocusedReturnsCurrentFocus",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 67,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "GetFocusedNullModelReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 75,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NavigateNextReturnsNextSibling",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 82,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NavigatePreviousReturnsPrevSibling",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 90,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NavigateNextAtEndReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 98,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NavigatePrevAtBeginReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 104,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NavigateEmptyCacheReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 110,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "GetParentReturnsParentNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 118,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "GetParentNoParentIdReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 132,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "GetFirstChildNoChildrenReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 140,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "GetLastChildNoChildrenReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 146,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "AllOfRoleReturnsMatchingNodes",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 154,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "AllOfRoleEmptyWhenNoMatch",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 170,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "FindNextHeadingSkipsOtherRoles",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 178,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "FindNextWrapsAround",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 191,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "PrevHeadingSearchesBackward",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 205,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "FindNextReturnsNulloptWhenRoleAbsent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 218,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NextLinkAndPrevLink",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 227,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NextButtonAndPrevButton",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 244,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NextFormFieldAndPrevFormField",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 259,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        },
+        {
+          "name": "NullModelAllMethodsReturnSafe",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_NavigationEngine.cpp",
+          "line": 276,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "NavigationEngineTest"
+        }
+      ]
+    },
+    {
+      "name": "SqliteSettingsStoreTest",
+      "tests": 15,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.004s",
+      "testsuite": [
+        {
+          "name": "OpenInMemorySucceeds",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 25,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "DoubleOpenIsIdempotent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 33,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "SetAndGetRoundTrip",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 42,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "GetMissingKeyReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 50,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "GetOrReturnsFallback",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 55,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "SetOverwritesExistingValue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 60,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "HasReturnsTrueForExistingKey",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 69,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "HasReturnsFalseForMissingKey",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 75,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "RemoveDeletesKey",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 82,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "RemoveMissingKeyReturnsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 89,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "KeysReturnsAllWhenNoPrefixGiven",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 96,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "KeysWithPrefixFiltersCorrectly",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 104,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "KeysEmptyWhenNoneMatch",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 117,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "ClearAllRemovesEverything",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 125,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        },
+        {
+          "name": "ClearWithPrefixRemovesOnlyMatching",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 133,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SqliteSettingsStoreTest"
+        }
+      ]
+    },
+    {
+      "name": "SettingsManagerTest",
+      "tests": 18,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.031s",
+      "testsuite": [
+        {
+          "name": "DefaultSpeechRate",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 146,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetAndGetSpeechRate",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 151,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "DefaultSpeechVolume",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 157,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetAndGetSpeechVolume",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 162,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "DefaultVoiceIdIsEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 168,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetAndGetVoiceId",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 173,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "DefaultVerbosityIsOne",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 179,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetAndGetVerbosity",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 184,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "AnnouncePositionDefaultFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 190,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetAnnouncePositionTrue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 195,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "ShortcutDefaultIsZeroZero",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 203,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetAndGetShortcut",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 210,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "RemoveShortcut",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 218,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "DefaultThemeIsSystem",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 229,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetThemeDark",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 234,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SuppressPasswordsDefaultTrue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 242,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "SetSuppressPasswordsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 247,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "SettingsManagerTest"
+        },
+        {
+          "name": "ValuesPersistedToFileAndReloaded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsManager.cpp",
+          "line": 255,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.025s",
+          "classname": "SettingsManagerTest"
+        }
+      ]
+    },
+    {
+      "name": "PrivacyFilterTest",
+      "tests": 23,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.001s",
+      "testsuite": [
+        {
+          "name": "PasswordEditRoleIsSensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 43,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "ProtectedStateIsSensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 47,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "PlainEditNodeIsNotSensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 53,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "ButtonIsNotSensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 57,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "SensitiveNameCaseInsensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 105,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "SensitiveDescriptionMakesNodeSensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 113,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R1_PasswordValueNeverSpoken",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 148,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R1_ProtectedStateValueNeverSpoken",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 154,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R1_SensitiveNameFieldValueNeverSpoken",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 161,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R1_NonSensitiveValueSpokenNormally",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 166,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R1_EmptyValueReturnedForSensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 171,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "PasswordLabelIsSafeToSpeak",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 178,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "UsernameLabelIsSafeToSpeak",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 183,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R2_PasswordInLogIsRedacted",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 190,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R6_SafeMessageUnchanged",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 198,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R6_EmptyMessageUnchanged",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 203,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R6_TokenInLogIsRedacted",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 207,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R6_MultipleKeywordsRedacted",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 214,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R3_PasswordNodeScrubbed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 223,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R3_NonSensitiveNodeUnchanged",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 230,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R3_PageUrlPreservedAfterScrub",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 237,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "R3_NonUrlDescriptionClearedAfterScrub",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 246,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        },
+        {
+          "name": "RedactedConstantIsCorrect",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 255,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "PrivacyFilterTest"
+        }
+      ]
+    },
+    {
+      "name": "ContextDetector_ClassifyByProcess",
+      "tests": 11,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "KnownBrowsers",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 32,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "BrowsersCaseInsensitive",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 41,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "CodeEditors",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 47,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "Terminals",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 55,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "Documents",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 64,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "Spreadsheets",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 71,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "Presentations",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 76,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "EmailAndChat",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 81,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "Media",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 89,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "FileExplorer",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 95,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        },
+        {
+          "name": "UnknownProcess",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 99,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByProcess"
+        }
+      ]
+    },
+    {
+      "name": "ContextDetector_DisplayName",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "KnownApps",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 106,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_DisplayName"
+        },
+        {
+          "name": "UnknownStripsExeAndCapitalises",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 113,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_DisplayName"
+        },
+        {
+          "name": "UnknownNoExtension",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 118,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_DisplayName"
+        },
+        {
+          "name": "EmptyProcess",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 123,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_DisplayName"
+        }
+      ]
+    },
+    {
+      "name": "ContextDetector_ClassifyByWindowClass",
+      "tests": 7,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ConsoleWindowClass",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 129,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        },
+        {
+          "name": "ChromeWidget",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 134,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        },
+        {
+          "name": "MozillaWindow",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 139,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        },
+        {
+          "name": "DialogClass",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 144,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        },
+        {
+          "name": "TeamsOpusApp",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 149,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        },
+        {
+          "name": "ShellTrayWindow",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 154,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        },
+        {
+          "name": "Unknown",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 159,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_ClassifyByWindowClass"
+        }
+      ]
+    },
+    {
+      "name": "ContextDetector_RefineBrowserContext",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "AddressBarByName",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 166,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_RefineBrowserContext"
+        },
+        {
+          "name": "LocationBarByName",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 172,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_RefineBrowserContext"
+        },
+        {
+          "name": "UrlContained",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 178,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_RefineBrowserContext"
+        },
+        {
+          "name": "NormalEditIsNotAddressBar",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 184,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_RefineBrowserContext"
+        }
+      ]
+    },
+    {
+      "name": "ContextDetector_Detect",
+      "tests": 8,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "ChromeWindowNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 192,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "ChromeAddressBarEdit",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 202,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "VSCodeNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 210,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "DialogNode",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 219,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "AlertDialog",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 226,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "UnknownProcessFallback",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 233,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "TerminalByProcess",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 241,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        },
+        {
+          "name": "ProcessIdPropagated",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextDetector.cpp",
+          "line": 249,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextDetector_Detect"
+        }
+      ]
+    },
+    {
+      "name": "ContextEngine",
+      "tests": 18,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.001s",
+      "testsuite": [
+        {
+          "name": "InitialContextIsUnknown",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 32,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "InitialObserverCountIsZero",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 40,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "UpdateFromUnknownToChrome",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 47,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "UpdateWithSameProcessNoChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 57,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "UpdateToNewProcessReturnsTrue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 65,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "GetCurrentReflectsLastUpdate",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 75,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "UpdateDialogSetsModalFlag",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 83,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "ObserverCalledOnChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 93,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "ObserverNotCalledWhenContextUnchanged",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 106,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "MultipleObserversAllFired",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 116,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "ObserverCountMatchesAdded",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 128,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "ClearObserversRemovesAll",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 137,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "ObserverNotCalledAfterClear",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 145,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "ObserverReceivesCorrectContextType",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 154,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "TransitionBrowserToTerminal",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 164,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "TransitionClearsWebContentForTerminal",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 173,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "SamePidDifferentRoleIsChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 181,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        },
+        {
+          "name": "UpdateUnknownProcessGivesDesktopApp",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_ContextEngine.cpp",
+          "line": 191,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "ContextEngine"
+        }
+      ]
+    },
+    {
+      "name": "Announcement",
+      "tests": 8,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.002s",
+      "testsuite": [
+        {
+          "name": "IsEmptyWhenNoParts",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 47,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "IsNotEmptyAfterAdd",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 52,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "AddIgnoresEmptyText",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 58,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "FlattenJoinsWithCommaSpace",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 65,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "FlattenSkipsEmptyParts",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 72,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "FlattenReturnsEmptyStringWhenAllEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 80,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "AddTextAppendsCustomPart",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 85,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        },
+        {
+          "name": "DefaultPriorityIsNormal",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 93,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "Announcement"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementEngine_Focus",
+      "tests": 29,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.001s",
+      "testsuite": [
+        {
+          "name": "InvalidNodeProducesEmptyAnnouncement",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 100,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "NameIsFirstPart",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 111,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "EmptyNameProducesNoPart",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 121,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "RoleIsAnnouncedAfterName",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 133,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "RoleSuppressedAtMinimalVerbosity",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 148,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "RoleSuppressedWhenAnnounceRoleFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 158,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "HeadingRoleIncludesLevel",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 169,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "StaticTextRoleIsEmpty_NotAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 185,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "TerminalContextSuppressesPaneRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 203,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "TerminalContextSuppressesWindowRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 213,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "TerminalContextDoesNotSuppressButtonRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 223,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "CodeEditorSuppressesPaneRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 235,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "BrowserContextDoesNotSuppressButtonRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 245,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "CheckedStateAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 259,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "DisabledStateAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 273,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "StateSuppressedAtMinimalVerbosity",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 287,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "ValueAnnouncedForSlider",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 300,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "PasswordValueNeverAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 312,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "ValueNotDuplicatedWhenEqualsName",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 325,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "PositionAnnouncedWhenPolicyEnabled",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 339,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "PositionNotAnnouncedByDefault",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 355,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "DescriptionAtDetailedVerbosity",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 369,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "DescriptionNotAtStandardVerbosity",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 381,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "DialogTitlePrependedOnModalEntry",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 393,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "DialogTitleNotRepeatedForSameDialog",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 404,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "NonModalContextNoPrefixEvenWithTitle",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 415,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "FlattenButtonAnnouncement",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 427,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "FlattenCheckedCheckbox",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 435,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        },
+        {
+          "name": "FlattenPasswordEditNoValue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 447,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Focus"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementEngine_Property",
+      "tests": 3,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "InvalidNodeIsEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 458,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Property"
+        },
+        {
+          "name": "SliderValueAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 467,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Property"
+        },
+        {
+          "name": "DoesNotCancelPreviousSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 480,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Property"
+        }
+      ]
+    },
+    {
+      "name": "AnnouncementEngine_Alert",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "PriorityIsHigh",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 490,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Alert"
+        },
+        {
+          "name": "CancelsPreviousSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 497,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Alert"
+        },
+        {
+          "name": "AlertRolePrependedToName",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 504,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Alert"
+        },
+        {
+          "name": "AlertDialogRoleIsAnnounced",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 513,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Alert"
+        },
+        {
+          "name": "InvalidNodeProducesEmptyAnnouncement",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AnnouncementEngine.cpp",
+          "line": 521,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "AnnouncementEngine_Alert"
+        }
+      ]
+    },
+    {
+      "name": "AccessReaderTest",
+      "tests": 22,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.488s",
+      "testsuite": [
+        {
+          "name": "IsRunningAfterInitialize",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 157,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.009s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "IsNotRunningAfterShutdown",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 161,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.009s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "ShutdownIdempotent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 166,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.004s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "DefaultPolicyIsStandard",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 174,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.005s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "SetPolicyRoundTrip",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 180,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.005s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "FocusChangedUpdatesContextEngine",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 190,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.004s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "FocusChangedProducesSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 197,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.019s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "FocusChangedAnnouncesRole",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 207,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.015s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "FocusChangedWithInvalidNodeNoSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 216,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.066s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "LastWindowTitleUpdatedOnFocusChange",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 227,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "LastWindowTitleEmptyInitially",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 234,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.003s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "LastWindowTitleUpdatesToLatest",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 238,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "ValueChangedProducesSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 248,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.012s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "StateChangedProducesSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 258,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.013s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "LiveRegionChangedProducesSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 271,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.02s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "AlertEventHasHighPriority",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 284,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.015s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "LiveRegionExtraInfoAppended",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 298,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.017s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "MenuOpenedEventNotSpoken",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 314,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.063s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "WindowClosedEventNotSpoken",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 324,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.053s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "FocusChangedIgnoredWhenShutdown",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 336,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.064s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "ReadFocusedWithNoFocusDoesNothing",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 346,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.072s",
+          "classname": "AccessReaderTest"
+        },
+        {
+          "name": "StopSpeechDoesNotCrash",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_AccessReader.cpp",
+          "line": 355,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "AccessReaderTest"
+        }
+      ]
+    },
+    {
+      "name": "DiagnosticsCounters",
+      "tests": 9,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.095s",
+      "testsuite": [
+        {
+          "name": "IncrementEventsProcessed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 49,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "IncrementFocusChanges",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 59,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "IncrementSpeechUtterances",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 67,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "IncrementContextSwitches",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 77,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "IncrementSpeechCancels",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 85,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "ResetClearsAll",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 94,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "UptimeIncreases",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 109,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.058s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "UptimeResetsOnReset",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 119,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.033s",
+          "classname": "DiagnosticsCounters"
+        },
+        {
+          "name": "ThreadSafeIncrement",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 127,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsCounters"
+        }
+      ]
+    },
+    {
+      "name": "FileSink",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.035s",
+      "testsuite": [
+        {
+          "name": "IsClosedByDefault",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 147,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FileSink"
+        },
+        {
+          "name": "OpenCreatesFile",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 152,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "FileSink"
+        },
+        {
+          "name": "WriteAppendsLine",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 163,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.017s",
+          "classname": "FileSink"
+        },
+        {
+          "name": "WriteAfterCloseIsIgnored",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 186,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "FileSink"
+        },
+        {
+          "name": "MultipleWritesDifferentLevels",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 204,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.015s",
+          "classname": "FileSink"
+        }
+      ]
+    },
+    {
+      "name": "DiagnosticsManager",
+      "tests": 9,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.047s",
+      "testsuite": [
+        {
+          "name": "IsNotLoggingToFileByDefault",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 232,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "SetLogFileOpensFile",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 237,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "SetLogFileInvalidPathReturnsFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 251,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "GetSnapshotReflectsCounters",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 259,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "ResetCountersClearsAll",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 282,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "UptimeInSnapshot",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 294,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.028s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "StaticRecordEventIncrementsCounter",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 305,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "StaticRecordSpeechIncrementsCounter",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 313,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "DiagnosticsManager"
+        },
+        {
+          "name": "LogFileReceivesLoggerOutput",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_DiagnosticsManager.cpp",
+          "line": 320,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.017s",
+          "classname": "DiagnosticsManager"
+        }
+      ]
+    },
+    {
+      "name": "CmdId",
+      "tests": 2,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "AllConstantsNonEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 25,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CmdId"
+        },
+        {
+          "name": "AllConstantsDistinct",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 43,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CmdId"
+        }
+      ]
+    },
+    {
+      "name": "CommandRegistry_RegisterAll",
+      "tests": 5,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "RegistersWithNullPointers",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 63,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_RegisterAll"
+        },
+        {
+          "name": "RegistersAllFifteenCommands",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 70,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_RegisterAll"
+        },
+        {
+          "name": "AllCommandIdsPresent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 76,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_RegisterAll"
+        },
+        {
+          "name": "ExecuteWithNullSubsystemsDoesNotCrash",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 93,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_RegisterAll"
+        },
+        {
+          "name": "CommandDisplayNamesNonEmpty",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 111,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_RegisterAll"
+        }
+      ]
+    },
+    {
+      "name": "CommandRegistry_BindDefaults",
+      "tests": 15,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.001s",
+      "testsuite": [
+        {
+          "name": "BindsExpectedCount",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 127,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "NoDuplicates",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 134,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockSpaceReadsNav",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 141,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockRightArrowNavNext",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 150,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockLeftArrowNavPrev",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 159,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockHNextHeading",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 168,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockShiftHPrevHeading",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 177,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockKNextLink",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 186,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockBNextButton",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 195,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockENextFormField",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 204,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockCtrlSStopSpeech",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 213,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockTReadTitle",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 222,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockUpNavParent",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 231,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "CapsLockDownNavFirstChild",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 240,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        },
+        {
+          "name": "UnboundKeyReturnsNullopt",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_CommandRegistry.cpp",
+          "line": 249,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0s",
+          "classname": "CommandRegistry_BindDefaults"
+        }
+      ]
+    },
+    {
+      "name": "SettingsApplierTest",
+      "tests": 16,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:22Z",
+      "time": "0.045s",
+      "testsuite": [
+        {
+          "name": "ApplyWithAllNullsDoesNotCrash",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 105,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplySpeechRate",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 112,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplySpeechVolume",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 123,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyVoiceId",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 131,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "EmptyVoiceIdNotApplied",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 140,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.007s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyMinimalVerbosityPolicy",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 150,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyStandardVerbosityPolicy",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 158,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyDetailedVerbosityPolicy",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 166,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.001s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyAnnouncePositionTrue",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 174,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyAnnouncePositionFalse",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 182,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.004s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyCustomShortcutRebindsCommand",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 192,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.003s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "ApplyNoCustomShortcutLeavesDefaultsIntact",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 204,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "SaveVerbosityMinimal",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 216,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "SaveVerbosityDetailed",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 224,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "SaveWithNullSpeechManagerDoesNotCrash",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 232,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.003s",
+          "classname": "SettingsApplierTest"
+        },
+        {
+          "name": "SaveAnnouncePosition",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_SettingsApplier.cpp",
+          "line": 236,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:22Z",
+          "time": "0.002s",
+          "classname": "SettingsApplierTest"
+        }
+      ]
+    },
+    {
+      "name": "Keywords\/SensitiveNameTest",
+      "tests": 25,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:23Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "MatchesExpected\/0",
+          "value_param": "16-byte object <38-06 78-BC F7-7F 00-00 01-09 8D-7A FF-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/1",
+          "value_param": "16-byte object <20-06 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/2",
+          "value_param": "16-byte object <18-06 78-BC F7-7F 00-00 01-BE 12-A7 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/3",
+          "value_param": "16-byte object <08-06 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/4",
+          "value_param": "16-byte object <00-06 78-BC F7-7F 00-00 01-67 86-7A FF-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/5",
+          "value_param": "16-byte object <F0-05 78-BC F7-7F 00-00 01-00 08-A7 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/6",
+          "value_param": "16-byte object <EC-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/7",
+          "value_param": "16-byte object <E8-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/8",
+          "value_param": "16-byte object <D0-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/9",
+          "value_param": "16-byte object <B8-05 78-BC F7-7F 00-00 01-67 86-7A FF-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/10",
+          "value_param": "16-byte object <A8-05 78-BC F7-7F 00-00 01-00 08-A7 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/11",
+          "value_param": "16-byte object <98-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/12",
+          "value_param": "16-byte object <88-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/13",
+          "value_param": "16-byte object <78-05 78-BC F7-7F 00-00 01-68 86-7A FF-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/14",
+          "value_param": "16-byte object <60-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/15",
+          "value_param": "16-byte object <50-05 78-BC F7-7F 00-00 01-00 08-A7 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/16",
+          "value_param": "16-byte object <40-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/17",
+          "value_param": "16-byte object <30-05 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/18",
+          "value_param": "16-byte object <28-05 78-BC F7-7F 00-00 01-0C F1-A6 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/19",
+          "value_param": "16-byte object <18-05 78-BC F7-7F 00-00 00-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/20",
+          "value_param": "16-byte object <08-05 78-BC F7-7F 00-00 00-00 08-A7 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/21",
+          "value_param": "16-byte object <FC-04 78-BC F7-7F 00-00 00-02 F1-A6 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/22",
+          "value_param": "16-byte object <F4-04 78-BC F7-7F 00-00 00-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/23",
+          "value_param": "16-byte object <E8-04 78-BC F7-7F 00-00 00-0C F1-A6 D3-01 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        },
+        {
+          "name": "MatchesExpected\/24",
+          "value_param": "16-byte object <E0-04 78-BC F7-7F 00-00 00-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 68,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Keywords\/SensitiveNameTest"
+        }
+      ]
+    },
+    {
+      "name": "Urls\/SensitiveContextTest",
+      "tests": 12,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2026-09-14T12:19:23Z",
+      "time": "0s",
+      "testsuite": [
+        {
+          "name": "MatchesExpected\/0",
+          "value_param": "16-byte object <70-1C 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/1",
+          "value_param": "16-byte object <58-1C 78-BC F7-7F 00-00 01-FF FF-FF 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/2",
+          "value_param": "16-byte object <38-1C 78-BC F7-7F 00-00 01-C3 6C-BC F7-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/3",
+          "value_param": "16-byte object <18-1C 78-BC F7-7F 00-00 01-03 ED-CC FE-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/4",
+          "value_param": "16-byte object <F0-1B 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/5",
+          "value_param": "16-byte object <D8-1B 78-BC F7-7F 00-00 01-00 00-00 F7-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/6",
+          "value_param": "16-byte object <B8-1B 78-BC F7-7F 00-00 01-03 ED-CC FE-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/7",
+          "value_param": "16-byte object <98-1B 78-BC F7-7F 00-00 01-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/8",
+          "value_param": "16-byte object <78-1B 78-BC F7-7F 00-00 00-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/9",
+          "value_param": "16-byte object <58-1B 78-BC F7-7F 00-00 00-20 ED-CC FE-7F 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/10",
+          "value_param": "16-byte object <38-1B 78-BC F7-7F 00-00 00-F7 9B-BA 16-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        },
+        {
+          "name": "MatchesExpected\/11",
+          "value_param": "16-byte object <E6-04 78-BC F7-7F 00-00 00-00 00-00 00-00 00-00>",
+          "file": "C:\\Users\\PrasannaNariboina\\OneDrive - IBM\\Prasan_Devops\\AccessOS\\Tests\\Unit\\Test_PrivacyFilter.cpp",
+          "line": 124,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2026-09-14T12:19:23Z",
+          "time": "0s",
+          "classname": "Urls\/SensitiveContextTest"
+        }
+      ]
+    }
+  ]
+}
